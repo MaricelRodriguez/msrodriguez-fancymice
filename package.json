@@ -1,0 +1,24 @@
+{
+  "name": "msrodriguez-fancymice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://MaricelRodriguez@github.com/MaricelRodriguez/msrodriguez-fancymice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaricelRodriguez/msrodriguez-fancymice/issues"
+  },
+  "homepage": "https://github.com/MaricelRodriguez/msrodriguez-fancymice#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2"
+  }
+}
