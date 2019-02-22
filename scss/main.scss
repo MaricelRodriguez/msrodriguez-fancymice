@@ -1,3 +1,11 @@
+//Config
+@import 'variables';
+@import 'mixins';
+@import 'placeholders';
+
+//Fonts & Type Styling
+@import 'typography';
+
 body {
-  color: darkblue;
+
 }

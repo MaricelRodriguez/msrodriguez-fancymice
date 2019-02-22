@@ -1,0 +1,17 @@
+@mixin break($size){
+  @if $size == small {
+    @media (min-width: 576px) {@content;}
+  }
+  @else if $size == medium {
+    @media (min-width: 768px) {@content;}
+  }
+  @else if $size == large {
+    @media (min-width: 992px) {@content;}
+  }
+  @else if $size == xlarge {
+    @media (min-width: 1200px) {@content;}
+  }
+  @else if $size == xxlarge {
+    @media (min-width: 1600px) {@content;}
+  }
+}

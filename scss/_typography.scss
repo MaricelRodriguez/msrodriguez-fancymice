@@ -1,0 +1,53 @@
+html{
+  font-size: 62.5%;
+}
+
+body {
+  @extend %font-family-body;
+  font-size: 1.6rem;
+  color: $dark;
+  @include break(large){
+    font-size: 1.8rem;
+  }
+}
+
+h1 {
+  @extend %font-family-primary;
+  font-size: 3.6rem;
+  @include break(large){
+    font-size: 6.8rem;
+  }
+}
+
+h2 {
+  font-weight: bold;
+}
+
+a {
+  color: $primary;
+}
+
+a:hover {
+  color: $secondary;
+  text-decoration: none;
+}
+
+a:visited {
+  color: $primary-light;
+}
+
+nav a {
+  @extend %font-family-secondary;
+  color: $medium;
+  @include break(large){
+    font-size: 3.2rem;
+  }
+}
+
+.active {
+  color: $primary;
+}
+
+.warning {
+  color: $warning;
+}

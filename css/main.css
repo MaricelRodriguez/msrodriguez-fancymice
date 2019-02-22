@@ -1,2 +1,57 @@
+/* === COLORS === */
+/* === TYPOGRAPHY === */
+/* === TYPOGRAPHY === */
+/* Font Families */
 body {
-  color: darkblue; }
+  font-weight: 300;
+  font-family: gibbs, sans-serif; }
+
+h1 {
+  font-weight: 400;
+  font-family: boucherie-cursive, sans-serif; }
+
+nav a {
+  font-weight: 200;
+  font-family: gibbs, sans-serif;
+  text-transform: uppercase; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.6rem;
+  color: #342E37; }
+  @media (min-width: 992px) {
+    body {
+      font-size: 1.8rem; } }
+
+h1 {
+  font-size: 3.6rem; }
+  @media (min-width: 992px) {
+    h1 {
+      font-size: 6.8rem; } }
+
+h2 {
+  font-weight: bold; }
+
+a {
+  color: #738F33; }
+
+a:hover {
+  color: #E8C547;
+  text-decoration: none; }
+
+a:visited {
+  color: #D4E09B; }
+
+nav a {
+  color: #464149; }
+  @media (min-width: 992px) {
+    nav a {
+      font-size: 3.2rem; } }
+
+.active {
+  color: #738F33; }
+
+.warning {
+  color: #AC3931; }
