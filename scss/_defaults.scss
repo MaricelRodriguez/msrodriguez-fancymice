@@ -8,11 +8,7 @@ body{
 
 #content{
   padding: 0;
-}
 
-#content > section {
-  padding: 50px 15px;
-  margin: auto 0 auto 0;
   h1{
     margin-bottom: 30px;
   }
@@ -22,6 +18,11 @@ body{
     border: 1px solid $dark;
     margin-top: 10px;
   }
+}
+
+#content > section {
+  padding: 50px 15px;
+  margin: auto 0 auto 0;
 }
 
 #content > section:nth-child(2n){
