@@ -69,8 +69,6 @@ body {
   margin: auto 0 auto 0; }
   #content > section h1 {
     margin-bottom: 30px; }
-  #content > section div {
-    padding: 0; }
   #content > section img {
     max-width: 100%;
     border: 1px solid #342E37;
