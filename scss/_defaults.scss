@@ -6,11 +6,19 @@ body{
   background-color: $background;
 }
 
-body > section {
+#content{
+  padding: 0;
+}
+
+#content > section {
   padding: 50px 15px;
   margin: auto 0 auto 0;
   h1{
     margin-bottom: 30px;
+  }
+
+  div{
+    padding: 0;
   }
 
   img {
@@ -20,7 +28,7 @@ body > section {
   }
 }
 
-body > section:nth-child(2n){
+#content > section:nth-child(2n){
   background-color: $background-dark;
 }
 

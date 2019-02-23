@@ -61,17 +61,22 @@ html {
 body {
   background-color: #ECEDEA; }
 
-body > section {
+#content {
+  padding: 0; }
+
+#content > section {
   padding: 50px 15px;
   margin: auto 0 auto 0; }
-  body > section h1 {
+  #content > section h1 {
     margin-bottom: 30px; }
-  body > section img {
+  #content > section div {
+    padding: 0; }
+  #content > section img {
     max-width: 100%;
     border: 1px solid #342E37;
     margin-top: 10px; }
 
-body > section:nth-child(2n) {
+#content > section:nth-child(2n) {
   background-color: #D7D8D5; }
 
 span {
