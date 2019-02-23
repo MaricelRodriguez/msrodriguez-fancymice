@@ -1,0 +1,29 @@
+header {
+  background-image: url('../images/lawn_mouse.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+
+  div{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100vw;
+  }
+
+  img {
+    width: 340px;
+    display: block;
+    margin: 50px auto;
+
+    @include break(large){
+      width: 700px;
+      margin: 75px auto;
+    }
+    @include break(xxlarge){
+      width: 1000px;
+      margin: 100px auto;
+    }
+  }
+}

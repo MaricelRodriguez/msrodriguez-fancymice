@@ -1,11 +1,16 @@
-//Config
+//Helpers
 @import 'variables';
 @import 'mixins';
 @import 'placeholders';
 
-//Fonts & Type Styling
+//Components
 @import 'typography';
+@import 'images';
 
-body {
+//Defaults
+@import 'defaults';
 
-}
+//Sections
+@import 'sections/header';
+@import 'sections/navigation';
+@import 'sections/intro'

@@ -1,0 +1,29 @@
+html{
+  font-size: 62.5%;
+}
+
+body{
+  background-color: $background;
+}
+
+body > section {
+  padding: 50px 15px;
+
+  h1{
+    margin-bottom: 30px;
+  }
+
+  img {
+    @extend %rectangle-image;
+    border: 1px solid $dark;
+    margin-top: 10px;
+  }
+}
+
+body > section:nth-child(2n){
+  background-color: $background-dark;
+}
+
+span {
+  visibility: hidden;
+}

@@ -2,21 +2,13 @@
 /* === TYPOGRAPHY === */
 /* === TYPOGRAPHY === */
 /* Font Families */
-body {
+body, nav a, footer h1 {
   font-weight: 300;
   font-family: gibbs, sans-serif; }
 
 h1 {
   font-weight: 400;
   font-family: boucherie-cursive, sans-serif; }
-
-nav a {
-  font-weight: 200;
-  font-family: gibbs, sans-serif;
-  text-transform: uppercase; }
-
-html {
-  font-size: 62.5%; }
 
 body {
   font-size: 1.6rem;
@@ -41,17 +33,88 @@ a:hover {
   color: #E8C547;
   text-decoration: none; }
 
-a:visited {
-  color: #D4E09B; }
-
 nav a {
+  text-transform: uppercase;
   color: #464149; }
   @media (min-width: 992px) {
     nav a {
       font-size: 3.2rem; } }
+
+footer {
+  color: #FFF; }
+  footer h1 {
+    font-size: 2.4rem;
+    font-weight: bold; }
+    @media (min-width: 992px) {
+      footer h1 {
+        font-size: 3.2rem; } }
 
 .active {
   color: #738F33; }
 
 .warning {
   color: #AC3931; }
+
+/* === IMAGES === */
+body > section img, #intro img {
+  width: 340px;
+  height: 207px; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: #ECEDEA; }
+
+body > section {
+  padding: 50px 15px; }
+  body > section h1 {
+    margin-bottom: 30px; }
+  body > section img {
+    border: 1px solid #342E37;
+    margin-top: 10px; }
+
+body > section:nth-child(2n) {
+  background-color: #D7D8D5; }
+
+span {
+  visibility: hidden; }
+
+header {
+  background-image: url("../images/lawn_mouse.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh; }
+  header div {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100vw; }
+  header img {
+    width: 340px;
+    display: block;
+    margin: 50px auto; }
+    @media (min-width: 992px) {
+      header img {
+        width: 700px;
+        margin: 75px auto; } }
+    @media (min-width: 1600px) {
+      header img {
+        width: 1000px;
+        margin: 100px auto; } }
+
+nav {
+  background-color: #FFF;
+  margin: 5px auto; }
+  nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    width: 100vw; }
+    nav ul li {
+      text-align: center;
+      border-bottom: 1px solid #464149;
+      padding: 5px 0; }
+    nav ul li:last-child {
+      border: none;
+      font-size: 3.0rem; }
