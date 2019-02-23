@@ -55,11 +55,6 @@ footer {
 .warning {
   color: #AC3931; }
 
-/* === IMAGES === */
-body > section img, #intro img {
-  width: 340px;
-  height: 207px; }
-
 html {
   font-size: 62.5%; }
 
@@ -67,10 +62,12 @@ body {
   background-color: #ECEDEA; }
 
 body > section {
-  padding: 50px 15px; }
+  padding: 50px 15px;
+  margin: auto 0 auto 0; }
   body > section h1 {
     margin-bottom: 30px; }
   body > section img {
+    max-width: 100%;
     border: 1px solid #342E37;
     margin-top: 10px; }
 
@@ -79,6 +76,13 @@ body > section:nth-child(2n) {
 
 span {
   visibility: hidden; }
+
+.container {
+  margin-left: 0;
+  margin-right: 0; }
+
+.row {
+  margin: 0; }
 
 header {
   background-image: url("../images/lawn_mouse.jpg");
