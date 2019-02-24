@@ -70,7 +70,7 @@ body {
     border: 1px solid #342E37;
     margin-top: 10px; }
 
-#content > section {
+#content > section, footer {
   padding: 50px 15px;
   margin: auto 0 auto 0; }
 
@@ -136,3 +136,6 @@ nav {
       font-weight: bold; }
   #cost table th, #cost table td {
     padding: 5px; }
+
+footer {
+  background-color: #342E37; }
