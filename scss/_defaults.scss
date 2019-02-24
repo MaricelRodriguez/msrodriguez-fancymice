@@ -1,0 +1,43 @@
+html{
+  font-size: 62.5%;
+}
+
+body{
+  background-color: $background;
+}
+
+#content{
+  padding: 0;
+
+  h1{
+    margin-bottom: 30px;
+  }
+
+  img {
+    max-width: 100%;
+    border: 1px solid $dark;
+    margin-top: 10px;
+  }
+}
+
+#content > section, footer {
+  padding: 50px 15px;
+  margin: auto 0 auto 0;
+}
+
+#content > section:nth-child(2n){
+  background-color: $background-dark;
+}
+
+span {
+  visibility: hidden;
+}
+
+.container {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.row {
+  margin: 0;
+}

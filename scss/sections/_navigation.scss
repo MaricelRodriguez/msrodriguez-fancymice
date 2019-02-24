@@ -1,0 +1,21 @@
+nav {
+  background-color: $light;
+  margin: 5px auto;
+
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    width: 100vw;
+
+    li {
+      text-align: center;
+      border-bottom: 1px solid $medium;
+      padding: 5px 0;
+    }
+
+    li:last-child {
+      border: none;
+      font-size: 3.0rem;
+    }
+  }
+}
