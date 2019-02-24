@@ -125,3 +125,14 @@ nav {
     nav ul li:last-child {
       border: none;
       font-size: 3.0rem; }
+
+#cost table {
+  background-color: #FFF;
+  width: 100%;
+  border: 1px solid #342E37; }
+  #cost table tr {
+    border: 1px solid #D7D8D5; }
+    #cost table tr strong {
+      font-weight: bold; }
+  #cost table th, #cost table td {
+    padding: 5px; }
