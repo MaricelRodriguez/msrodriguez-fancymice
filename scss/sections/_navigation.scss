@@ -1,21 +1,53 @@
 nav {
   background-color: $light;
-  margin: 5px auto;
+  margin: 0 auto 5px auto;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 
   ul {
     list-style-type: none;
     padding-left: 0;
     width: 100vw;
 
+    @include break(medium){
+      overflow: hidden;
+      padding-left: 20px;
+
+      li:nth-child(7){
+        border: none;
+      }
+    }
+
     li {
       text-align: center;
       border-bottom: 1px solid $medium;
       padding: 5px 0;
+
+      @include break(medium){
+        float: left;
+        border-bottom: none;
+        border-right: 1px solid $medium;
+        padding: 10px 10px;
+      }
+      @include break(large){
+        padding: 10px 15px;
+      }
+    }
+
+    .closed {
+      display: none;
+      @include break(medium){
+        display: block;
+      }
     }
 
     li:last-child {
       border: none;
       font-size: 3.0rem;
+      display: block;
+      @include break(medium){
+        display: none;
+      }
     }
   }
 }
