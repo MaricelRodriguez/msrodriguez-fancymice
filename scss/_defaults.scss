@@ -13,6 +13,11 @@ body{
     margin-bottom: 30px;
   }
 
+  h2{
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
   img {
     max-width: 100%;
     border: 1px solid $dark;
@@ -30,7 +35,7 @@ body{
 }
 
 span {
-  visibility: hidden;
+  display: none;
 }
 
 .container {
