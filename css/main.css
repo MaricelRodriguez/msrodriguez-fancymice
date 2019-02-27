@@ -58,7 +58,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-color: #ECEDEA; }
+  background-color: #ECEDEA;
+  position: relative; }
 
 #content {
   padding: 0; }
@@ -90,6 +91,7 @@ span {
   margin: 0; }
 
 header {
+  position: inherit;
   background-image: url("../images/lawn_mouse.jpg");
   background-position: center;
   background-size: cover;
