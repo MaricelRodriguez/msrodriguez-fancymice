@@ -48,11 +48,36 @@ footer {
       footer h1 {
         font-size: 3.2rem; } }
 
+span {
+  font-size: 1.4rem; }
+
 .active {
   color: #738F33; }
 
 .warning {
   color: #AC3931; }
+
+#content img {
+  max-width: 100%;
+  border: 1px solid #342E37;
+  margin-top: 10px; }
+
+span {
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #FFF;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  margin-left: 15px; }
+
+.img-wrap {
+  position: relative;
+  padding: 0; }
+
+.img-wrap:hover span {
+  opacity: 1; }
 
 html {
   font-size: 62.5%; }
@@ -68,10 +93,6 @@ body {
   #content h2 {
     margin-top: 30px;
     margin-bottom: 10px; }
-  #content img {
-    max-width: 100%;
-    border: 1px solid #342E37;
-    margin-top: 10px; }
 
 #content > section, footer {
   padding: 50px 15px;
@@ -79,9 +100,6 @@ body {
 
 #content > section:nth-child(2n) {
   background-color: #D7D8D5; }
-
-span {
-  display: none; }
 
 .container {
   margin-left: 0;

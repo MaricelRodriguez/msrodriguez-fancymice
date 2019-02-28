@@ -18,12 +18,6 @@ body{
     margin-top: 30px;
     margin-bottom: 10px;
   }
-
-  img {
-    max-width: 100%;
-    border: 1px solid $dark;
-    margin-top: 10px;
-  }
 }
 
 #content > section, footer {
@@ -33,10 +27,6 @@ body{
 
 #content > section:nth-child(2n){
   background-color: $background-dark;
-}
-
-span {
-  display: none;
 }
 
 .container {
