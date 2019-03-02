@@ -1,4 +1,8 @@
 #cost {
+
+  p:last-of-type{
+    padding-bottom: $spacing-md;
+  }
   table{
     background-color: $light;
     width: 100%;

@@ -1,0 +1,14 @@
+#housing, #diet {
+  div:first-child p:last-of-type{
+    padding-bottom: $spacing-md;
+  }
+
+  section{
+    padding: 0 0 $spacing-md 0;
+
+    @include break(medium){
+      padding: 0 $spacing-sm-split $spacing-md $spacing-sm-split;
+    }
+  }
+
+}

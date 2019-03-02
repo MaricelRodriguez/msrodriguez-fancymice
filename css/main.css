@@ -1,5 +1,7 @@
 /* === COLORS === */
-/* === TYPOGRAPHY === */
+/* === SPACING SIZES === */
+/* ===== COMPONENTS ===== */
+/* === Typography === */
 /* Font Families */
 body, nav a, footer h1 {
   font-weight: 300;
@@ -48,53 +50,83 @@ footer {
       footer h1 {
         font-size: 3.2rem; } }
 
+span {
+  font-size: 1.4rem; }
+
 .active {
   color: #738F33; }
 
 .warning {
   color: #AC3931; }
 
+/*** COMPONENTS: IMAGES ***/
+/* Styles for images and image captions. */
+#content img {
+  max-width: 100%;
+  border: 1px solid #342E37; }
+
+span {
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #FFF;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px; }
+
+.img-wrap {
+  position: relative;
+  padding: 0;
+  width: fit-content;
+  height: fit-content; }
+
+.img-wrap:hover span {
+  opacity: 1; }
+
+/*** DEFAULTS ***/
+/* Defaults are true for general elements of the entire page. */
 html {
   font-size: 62.5%; }
 
 body {
-  background-color: #ECEDEA; }
+  background-color: #ECEDEA;
+  position: relative; }
 
 #content {
   padding: 0; }
   #content h1 {
-    margin-bottom: 30px; }
+    margin: auto auto 30px auto; }
   #content h2 {
-    margin-top: 30px;
-    margin-bottom: 10px; }
-  #content img {
-    max-width: 100%;
-    border: 1px solid #342E37;
-    margin-top: 10px; }
+    margin: 30px auto 10px auto; }
+  #content div {
+    padding: 0; }
 
 #content > section, footer {
   padding: 50px 15px;
-  margin: auto 0 auto 0; }
+  margin: auto 0; }
+  @media (min-width: 768px) {
+    #content > section, footer {
+      padding: 50px 30px; } }
+  @media (min-width: 992px) {
+    #content > section, footer {
+      padding: 50px 50px; } }
 
 #content > section:nth-child(2n) {
   background-color: #D7D8D5; }
 
-span {
-  display: none; }
-
 .container {
-  margin-left: 0;
-  margin-right: 0; }
+  margin: auto 0; }
 
 .row {
   margin: 0; }
 
 header {
+  position: inherit;
   background-image: url("../images/lawn_mouse.jpg");
   background-position: center;
   background-size: cover;
   height: 100vh; }
-  header div {
+  header div:first-of-type {
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 50%;
@@ -112,6 +144,17 @@ header {
       header img {
         width: 1000px;
         margin: 100px auto; } }
+  header div:last-of-type {
+    width: 100vw;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    color: #FFF; }
+  header p {
+    padding: 0;
+    margin-bottom: -15px; }
+  header i {
+    font-size: 5.0rem; }
 
 nav {
   background-color: #FFF;
@@ -153,6 +196,59 @@ nav {
       @media (min-width: 768px) {
         nav ul li:last-child {
           display: none; } }
+
+#intro div:first-of-type, #handling div:first-of-type {
+  margin-bottom: 30px; }
+  @media (min-width: 768px) {
+    #intro div:first-of-type, #handling div:first-of-type {
+      padding-bottom: 0;
+      padding-right: 30px; } }
+
+#general-care div section:last-of-type {
+  padding-bottom: 15px; }
+
+#general-care div p:last-of-type {
+  padding-bottom: 30px; }
+
+#general-care .img-wrap:first-of-type {
+  margin-bottom: 15px; }
+  @media (min-width: 768px) {
+    #general-care .img-wrap:first-of-type {
+      margin-bottom: 0;
+      padding-right: 7px; } }
+
+@media (min-width: 768px) {
+  #general-care .img-wrap:last-of-type {
+    padding-left: 7px; } }
+
+@media (min-width: 768px) {
+  #general-care .img-wrap:last-of-type span {
+    margin-left: 7px; } }
+
+#housing div:first-child p:last-of-type, #diet div:first-child p:last-of-type {
+  padding-bottom: 30px; }
+
+#housing section, #diet section {
+  padding: 0 0 30px 0; }
+  @media (min-width: 768px) {
+    #housing section, #diet section {
+      padding: 0 7px 30px 7px; } }
+
+#hides-chews-and-toys div:first-child p:last-of-type {
+  padding-bottom: 30px; }
+
+#hides-chews-and-toys .img-wrap {
+  margin-bottom: 15px; }
+  @media (min-width: 768px) {
+    #hides-chews-and-toys .img-wrap {
+      padding: 0 7px; } }
+
+@media (min-width: 768px) {
+  #hides-chews-and-toys span {
+    margin-left: 7px; } }
+
+#cost p:last-of-type {
+  padding-bottom: 30px; }
 
 #cost table {
   background-color: #FFF;
