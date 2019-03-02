@@ -8,10 +8,10 @@
   }
 
   .img-wrap:first-of-type{
-    padding-bottom: $spacing-sm;
+    margin-bottom: $spacing-sm;
 
     @include break(medium){
-      padding-bottom: 0;
+      margin-bottom: 0;
       padding-right: $spacing-sm-split;
     }
   }

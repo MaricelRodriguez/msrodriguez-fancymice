@@ -126,7 +126,7 @@ header {
   background-position: center;
   background-size: cover;
   height: 100vh; }
-  header div {
+  header div:first-of-type {
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 50%;
@@ -144,6 +144,17 @@ header {
       header img {
         width: 1000px;
         margin: 100px auto; } }
+  header div:last-of-type {
+    width: 100vw;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    color: #FFF; }
+  header p {
+    padding: 0;
+    margin-bottom: -15px; }
+  header i {
+    font-size: 5.0rem; }
 
 nav {
   background-color: #FFF;
@@ -187,7 +198,7 @@ nav {
           display: none; } }
 
 #intro div:first-of-type, #handling div:first-of-type {
-  padding-bottom: 30px; }
+  margin-bottom: 30px; }
   @media (min-width: 768px) {
     #intro div:first-of-type, #handling div:first-of-type {
       padding-bottom: 0;
@@ -200,10 +211,10 @@ nav {
   padding-bottom: 30px; }
 
 #general-care .img-wrap:first-of-type {
-  padding-bottom: 15px; }
+  margin-bottom: 15px; }
   @media (min-width: 768px) {
     #general-care .img-wrap:first-of-type {
-      padding-bottom: 0;
+      margin-bottom: 0;
       padding-right: 7px; } }
 
 @media (min-width: 768px) {
