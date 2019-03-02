@@ -1,0 +1,30 @@
+#general-care{
+  div section:last-of-type{
+    padding-bottom: $spacing-sm;
+  }
+
+  div p:last-of-type{
+    padding-bottom: $spacing-md;
+  }
+
+  .img-wrap:first-of-type{
+    padding-bottom: $spacing-sm;
+
+    @include break(medium){
+      padding-bottom: 0;
+      padding-right: $spacing-sm-split;
+    }
+  }
+
+  .img-wrap:last-of-type{
+    @include break(medium){
+      padding-left: $spacing-sm-split;
+    }
+  }
+
+  .img-wrap:last-of-type span{
+    @include break(medium){
+      margin-left: $spacing-sm-split;
+    }
+  }
+}

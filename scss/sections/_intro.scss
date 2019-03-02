@@ -1,0 +1,9 @@
+#intro, #handling {
+  div:first-of-type{
+    padding-bottom: $spacing-md;
+    @include break(medium){
+      padding-bottom: 0;
+      padding-right: $spacing-md;
+    }
+  }
+}

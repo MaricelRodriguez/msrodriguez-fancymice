@@ -1,0 +1,18 @@
+#hides-chews-and-toys{
+  div:first-child p:last-of-type{
+    padding-bottom: $spacing-md;
+  }
+
+  .img-wrap{
+    margin-bottom: $spacing-sm;
+    @include break(medium){
+      padding: 0 $spacing-sm-split;
+    }
+  }
+
+  span{
+    @include break(medium){
+      margin-left: $spacing-sm-split;
+    }
+  }
+}
